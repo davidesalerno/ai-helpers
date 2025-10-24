@@ -48,8 +48,17 @@ See [plugins/jira/README.md](plugins/jira/README.md) for full documentation.
 
 General-purpose utilities for development workflows:
 - **PR Test Generation** (`/utils:generate-test-plan`) - Generate test steps for one or more related PRs
+- **Process Renovate PRs** (`/utils:process-renovate-pr`) - Process Renovate dependency PRs to meet repository standards
 
 See [plugins/utils/commands/generate-test-plan.md](plugins/utils/commands/generate-test-plan.md) for full documentation.
+
+### OpenShift Plugin
+
+OpenShift development workflow automation:
+- **Dependency Bumping** (`/openshift:bump-deps`) - Bump dependencies with automated analysis, testing, and PR creation
+- **E2E Test Generation** (`/openshift:new-e2e-test`) - Generate end-to-end tests for OpenShift features
+
+See [plugins/openshift/README.md](plugins/openshift/README.md) for full documentation.
 
 ## Plugin Development
 
