@@ -8,6 +8,7 @@ Comprehensive Jira integration for Claude Code, providing AI-powered tools to an
 - 📊 **Status Rollups** - Generate comprehensive status rollup comments for any Jira issue given a date range
 - 📋 **Backlog Grooming** - Analyze new bugs and cards for grooming meetings
 - 🧪 **Test Generation** - Generate comprehensive test steps for JIRA issues by analyzing related PRs
+- 🔁 **Bug Reproducers** - Infer reproduction steps from JIRA and fix PRs when repro steps are incomplete
 - ✨ **Issue Creation** - Create well-formed stories, epics, features, tasks, and bugs with guided workflows
 - 🤖 **Automated Workflows** - From issue analysis to PR creation, fully automated
 - 💬 **Smart Comment Analysis** - Extracts blockers, risks, and key insights from comments
@@ -151,6 +152,23 @@ Generate comprehensive test steps for a JIRA issue by analyzing related pull req
 ```
 
 See [commands/generate-test-plan.md](commands/generate-test-plan.md) for full documentation.
+
+---
+
+### `/jira:generate-bug-reproducer` - Generate Bug Reproducers
+
+Analyze a bug's JIRA description and fix PR code changes to produce a structured reproducer report with pre-fix reproduction steps, post-fix verification, and a confidence assessment. This is an alias for `/jira:generate-test-plan --reproducer`; both use the same shared skill.
+
+**Usage:**
+```bash
+# Auto-discover PRs from JIRA
+/jira:generate-bug-reproducer OCPBUGS-12345
+
+# Analyze specific fix PRs
+/jira:generate-bug-reproducer OCPBUGS-12345 https://github.com/openshift/hypershift/pull/6888
+```
+
+See [commands/generate-bug-reproducer.md](commands/generate-bug-reproducer.md) for full documentation.
 
 ---
 

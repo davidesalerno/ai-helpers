@@ -375,7 +375,7 @@ Example: `.work/prow-job-analyze-resource/1234567890/etcd-0.html`
 | Plugin | Purpose | Key Commands |
 |--------|---------|--------------|
 | `hello-world` | Reference implementation | `/hello-world:echo` |
-| `jira` | JIRA automation | `/jira:solve`, `/jira:status-rollup`, `/jira:grooming`, `/jira:outcome-refinement` |
+| `jira` | JIRA automation | `/jira:solve`, `/jira:status-rollup`, `/jira:grooming`, `/jira:generate-test-plan`, `/jira:generate-bug-reproducer` |
 | `prow-job` | Prow CI analysis | `/prow-job:analyze-test-failure`, `/prow-job:analyze-resource` |
 | `ci` | OpenShift CI integration | `/ci:trigger-presubmit`, `/ci:ask-sippy` |
 | `utils` | General utilities | `/utils:generate-test-plan`, `/utils:address-reviews` |

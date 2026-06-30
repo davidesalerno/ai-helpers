@@ -449,6 +449,7 @@ Steps to reproduce:
 - `jira:grooming` - Generate grooming meeting agendas
 - `jira:status-rollup` - Create status rollup reports
 - `jira:generate-test-plan` - Generate test plans for PRs
+- `jira:generate-bug-reproducer` - Generate bug reproducer reports from JIRA and fix PRs
 
 ## Skills Reference
 

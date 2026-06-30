@@ -96,6 +96,7 @@ Comprehensive Jira automation including:
 - **Weekly Status Rollups** (`/jira:status-rollup`) - Generate status summaries by analyzing all child issues
 - **Backlog Grooming** (`/jira:grooming`) - Analyze new bugs and cards for grooming meetings
 - **Test Generation** (`/jira:generate-test-plan`) - Generate comprehensive test steps for JIRA issues by analyzing related PRs
+- **Bug Reproducers** (`/jira:generate-bug-reproducer`) - Infer reproduction steps from JIRA and fix PRs to validate bug fixes
 
 See [plugins/jira/README.md](plugins/jira/README.md) for full documentation.
 
